@@ -2,26 +2,20 @@ import Navbar from "../Components/Navbar"
 import SideMenu from "../Components/SideMenu"
 import View from "./Routes/View"
 
+// defind css string
+const MenuContainerClass= "flex gap-3"
+//end
+
 function Main() {
   return (
     <div>
         <Navbar />
-        <MenuContainer>
+        <div className={MenuContainerClass}>
             <SideMenu />
             <View />
-        </MenuContainer>
+        </div>
     </div>
   )
 }
 
 export default Main
-
-
-// pre styled components for the purposes of the component clean up
-function MenuContainer({children}:any) {
-    return(
-        <div className="flex gap-3">
-            {children}
-        </div>
-    )
-}
