@@ -1,7 +1,8 @@
 
+const ContainerClass = "h-[8vh] flex items-center justify-between"
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <div className={ContainerClass}>Navbar</div>
   )
 }
 
